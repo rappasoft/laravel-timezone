@@ -1,6 +1,6 @@
 <?php
 
-namespace JamesMills\LaravelTimezone;
+namespace Rappasoft\LaravelTimezone;
 
 use Carbon\Carbon;
 
@@ -19,9 +19,9 @@ class Timezone
         }
 
         $timezone = (auth()->user()->timezone) ?? config('app.timezone');
-        
+
         $enableTranslation = $enableTranslation !== null ? $enableTranslation : config('timezone.enableTranslation');
-        
+
         $date->setTimezone($timezone);
 
         if (is_null($format)) {

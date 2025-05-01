@@ -1,12 +1,12 @@
 <?php
 
-namespace JamesMills\LaravelTimezone;
+namespace Rappasoft\LaravelTimezone;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
-use JamesMills\LaravelTimezone\Listeners\Auth\UpdateUsersTimezone;
+use Rappasoft\LaravelTimezone\Listeners\Auth\UpdateUsersTimezone;
 
 class LaravelTimezoneServiceProvider extends ServiceProvider
 {
@@ -33,7 +33,7 @@ class LaravelTimezoneServiceProvider extends ServiceProvider
         }
 
         // Register the Timezone alias
-        AliasLoader::getInstance()->alias('Timezone', \JamesMills\LaravelTimezone\Facades\Timezone::class);
+        AliasLoader::getInstance()->alias('Timezone', \Rappasoft\LaravelTimezone\Facades\Timezone::class);
 
         // Register an event listener
         $this->registerEventListener();

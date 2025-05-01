@@ -1,6 +1,6 @@
 <?php
 
-namespace JamesMills\LaravelTimezone\Listeners\Auth;
+namespace Rappasoft\LaravelTimezone\Listeners\Auth;
 
 use Illuminate\Auth\Events\Login;
 use Illuminate\Support\Facades\Auth;
