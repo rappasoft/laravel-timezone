@@ -1,5 +1,5 @@
 {
-    "name": "jamesmills/laravel-timezone",
+    "name": "rappasoft/laravel-timezone",
     "license": "MIT",
     "description": "Timezone storage and retrieval for Laravel",
     "keywords": [
@@ -10,6 +10,10 @@
         {
             "name": "James Mills",
             "email": "james@jamesmills.co.uk"
+        },
+        {
+            "name": "Anthony Rappa",
+            "email": "anthony@rappasoft.com"
         }
     ],
     "require": {
@@ -20,14 +24,14 @@
     },
     "autoload": {
         "psr-4": {
-            "JamesMills\\LaravelTimezone\\": "src/",
-            "JamesMills\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
+            "Rappasoft\\LaravelTimezone\\": "src/",
+            "Rappasoft\\LaravelTimezone\\Database\\Seeds\\": "database/seeds/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "JamesMills\\LaravelTimezone\\LaravelTimezoneServiceProvider"
+                "Rappasoft\\LaravelTimezone\\LaravelTimezoneServiceProvider"
             ]
         }
     },
